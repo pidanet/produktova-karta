@@ -1,0 +1,128 @@
+:root {
+  --product-gray: #808080;
+  --product-gray-light: #d9d9d9;
+  --product-red: #ee1212;
+  --product-red-light: #ee121240;
+  --product-green: #7fcb5b61;
+  --product-green-light: #32840c;
+  --product-yellow: #fffa87;
+  --product-black: #000;
+  --product-white: #fff;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.product-card {
+  border: 1px solid var(--product-black);
+  width: 450px;
+  position: relative;
+  padding: 20px;
+}
+
+.product-more-info {
+  color: var(--product-gray);
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-price-container {
+  background-color: var(--product-red-light);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.product-price {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.product-price-discount {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  background-color: var(--product-gray-light);
+  border: 2px solid var(--product-black);
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.product-shipping-label {
+  background-color: var(--product-green);
+  color: var(--product-green-light);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  position: relative;
+}
+
+.product-shipping-info {
+  text-decoration: underline;
+  position: absolute;
+  right: 20px;
+}
+
+.bestseller-badge {
+  background-color: var(--product-yellow);
+  display: inline-block;
+  padding: 7px 25px;
+  font-weight: 700;
+  height: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.product-label {
+  background-color: var(--product-red);
+  color: var(--product-white);
+  font-weight: bold;
+  display: inline-block;
+  padding: 7px 15px 7px 25px;
+  height: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.discount-badge {
+  background-color: var(--product-red);
+  color: var(--product-white);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-align: center;
+}
+
+.product-image-container {
+  height: 350px;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
